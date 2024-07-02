@@ -1,0 +1,2 @@
+Requirement already satisfied: pyarrow in c:\users\jf\anaconda3\envs\tf26\lib\site-packages (16.1.0)
+Requirement already satisfied: numpy>=1.16.6 in c:\users\jf\anaconda3\envs\tf26\lib\site-packages (from pyarrow) (1.26.4)
