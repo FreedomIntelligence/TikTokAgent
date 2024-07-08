@@ -35,3 +35,14 @@ On Windows systems, you'll use "adb.exe" instead. The command might look like:
 ```
 C:\path\to\adb.exe devices
 ```
+
+### Run
+First, go to controller.py and change the command to suit you based on the environment you are using.
+Then, run the command, set counter to the filename (test + counter) you want to begin in (you can change the filename where the data goes), the address the address to the folder MobileAgent-main, the 
+```
+python controller1.py --counter "_" --address "address to MobileAgent-main" --grounding "groundingdino path" --description "demographic description --adb "adb path" --api "api key"
+```
+
+```
+python run_api.py --adb_path /path/to/adb --url "The url you got" --token "The token you got" --instruction "your instruction"
+```
