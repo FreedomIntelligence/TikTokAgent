@@ -43,9 +43,15 @@ C:\path\to\adb.exe devices
 Next, go to ProgramController.py and change the command to suit you based on the environment you are using. You may also change addresses and files in the MobileAgent-main folder and the run.py file to match the ProgramController's code.
 Then, run the command, set the counter to the number in the filename (test + counter) you want to begin in (you can change the filename where the data goes), the address to the folder MobileAgent-main, the groundingdino path, the demographic description of the person, and the API key that you have been provided.
 ```
-python controller1.py --counter "_" --address /path/to/MobileAgent-main --grounding /path/to/GroundingDINO --description "demographic description --adb /path/to/adb --api "your api key"
+python ProgramController.py --counter _num_ --address /path/to/MobileAgent-main --grounding /path/to/GroundingDINO --description "demographic description" --adb /path/to/adb --api "your api key"
 ```
 
 ### Impact Assessment
-Put in the demographic description 
+```
+python FindingTheEffects.py --filePath /path/to/MobileAgent-main --startingNum _num_ --api "your api key" --description "demographic description" 
+```
 
+### Accessing Historical Database
+```
+python HistoricalDatabase.py --filePath /path/to/MobileAgent-main --startingNum _num_ --part "What part you are looking for (ex. Thought, Action)"
+```
